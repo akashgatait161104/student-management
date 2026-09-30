@@ -1,0 +1,15 @@
+<div class="main-layout">
+    <!-- FULL HEIGHT SIDEBAR -->
+    <app-sidebar [sidebarOpen]="sidebarOpen" (closeSidebar)="closeSidebar()"></app-sidebar>
+    <!-- RIGHT SIDE -->
+    <div class="right-section">
+        <!-- NAVBAR -->
+        <app-navbar (menuClick)="toggleSidebar()"></app-navbar>
+        <!-- PAGE CONTENT -->
+        <main class="page-content">
+            <div class="page-card">
+                <router-outlet></router-outlet>
+            </div>
+        </main>
+    </div>
+</div>

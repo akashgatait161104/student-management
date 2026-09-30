@@ -1,0 +1,70 @@
+<aside class="sidebar" [class.mobile-open]="sidebarOpen">
+  <!-- Logo -->
+  <div class="logo">
+    <mat-icon routerLink="/">school</mat-icon>
+    <span class="logo-text">
+      GRADEUP
+    </span>
+  </div>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <a routerLink="/app-home" (click)="close()">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+
+    <a routerLink="/app-dashboard" (click)="close()">
+      <!-- <mat-icon>account_circle</mat-icon> -->
+       <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </a>
+
+    <a routerLink="/about" (click)="close()">
+      <mat-icon>public</mat-icon>
+      <span>Global Management</span>
+    </a>
+
+    <a routerLink="/app-about" (click)="close()">
+      <mat-icon>info</mat-icon>
+      <span>About us</span>
+    </a>
+
+    <a routerLink="/contact" (click)="close()">
+      <mat-icon>credit_card</mat-icon>
+      <span>ATM Card & Transaction Management</span>
+    </a>
+
+    <a routerLink="/kcc" (click)="close()">
+      <mat-icon>list</mat-icon>
+      <span>KCC Card Management System</span>
+    </a>
+
+    <a routerLink="/reports" (click)="close()">
+      <mat-icon>bar_chart</mat-icon>
+      <span>Report Management</span>
+    </a>
+
+    <a routerLink="/about" (click)="close()">
+      <mat-icon>swap_horiz</mat-icon>
+      <span>Mandate Management</span>
+    </a>
+
+    <a routerLink="/contact" (click)="close()">
+      <mat-icon>percent</mat-icon>
+      <span>Inter Branch Interest</span>
+    </a>
+
+    <a routerLink="/about" (click)="close()">
+      <mat-icon>menu</mat-icon>
+      <span>Others</span>
+    </a>
+  </nav>
+</aside>
+
+
+<!-- Mobile overlay -->
+@if (sidebarOpen) {
+<div class="sidebar-overlay" (click)="close()">
+</div>
+}

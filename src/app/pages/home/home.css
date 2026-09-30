@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.3fr 1.7fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.left-section {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.right-section {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.profiletable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profiletable th,
+.profiletable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.profiletable th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
